@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    var habit = Habit(name: "Walking")
+    var controller = Controller()
+    
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Button(action: {}) {
+                Button(action: {controller.createHabit(habitName: "walking")}) {
                     Image(systemName: "plus.circle")
                         .font(.system(size: 50))
                         .foregroundStyle(.green)
