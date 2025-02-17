@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D22A3E162D63FAEB00C2F7CB /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A3E142D63FAA100C2F7CB /* SwiftData.framework */; };
+		D22A3E172D63FAEB00C2F7CB /* SwiftData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D22A3E142D63FAA100C2F7CB /* SwiftData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D22A3D832D5D749C00C2F7CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +28,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D22A3E182D63FAEB00C2F7CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D22A3E172D63FAEB00C2F7CB /* SwiftData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D22A3D722D5D749A00C2F7CB /* EggHabbits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggHabbits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A3D822D5D749C00C2F7CB /* EggHabbitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggHabbitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A3D8C2D5D749D00C2F7CB /* EggHabbitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggHabbitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22A3E142D63FAA100C2F7CB /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22A3E162D63FAEB00C2F7CB /* SwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,7 @@
 				D22A3D742D5D749A00C2F7CB /* EggHabbits */,
 				D22A3D852D5D749D00C2F7CB /* EggHabbitsTests */,
 				D22A3D8F2D5D749D00C2F7CB /* EggHabbitsUITests */,
+				D22A3E132D63FAA100C2F7CB /* Frameworks */,
 				D22A3D732D5D749A00C2F7CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +114,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D22A3E132D63FAA100C2F7CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D22A3E142D63FAA100C2F7CB /* SwiftData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +132,7 @@
 				D22A3D6E2D5D749A00C2F7CB /* Sources */,
 				D22A3D6F2D5D749A00C2F7CB /* Frameworks */,
 				D22A3D702D5D749A00C2F7CB /* Resources */,
+				D22A3E182D63FAEB00C2F7CB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
