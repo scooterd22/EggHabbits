@@ -52,17 +52,14 @@ struct ContentView: View {
        }
 
        #Preview {
-           PopupView(
-                  showPopup: .constant(true),  // Default to visible
-                  activityName: .constant("Walking"),
-                  numberOfDays: .constant(10)  // Provide an integer value
-              )
+           ContentView()
        }
 
        struct PopupView: View {
            @Binding var showPopup: Bool
            @Binding var activityName: String
            @Binding var numberOfDays: Int
+           @Binding var savedActivity: Bool
 
            var body: some View {
                VStack {
@@ -107,6 +104,7 @@ struct ContentView: View {
                            
                        Button("Save"){
                            print("you are doing \(activityName) for \(numberOfDays) days, good luck!")
+                           savedActivity = true
                            
                        }
                        .foregroundStyle(Color.white)
@@ -128,3 +126,11 @@ struct ContentView: View {
                
            }
        }
+
+struct EggView: View {
+    
+    var body: some View {
+        Text("this is the eggview")
+        
+    }
+}

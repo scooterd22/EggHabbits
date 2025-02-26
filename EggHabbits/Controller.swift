@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Foundation
+import SwiftData
 
 class Controller: ObservableObject {
     @Published var habits: [Habit] = []
